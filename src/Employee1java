@@ -1,0 +1,41 @@
+
+import java.util.Scanner;
+
+class Person {
+    int age;
+    String name;
+    int empId;
+    float salary;
+
+    public void showDetails() {
+        System.out.println("Enter the name,employee id ,salary and the age of the person");
+        name = "Rabin";
+        age = 20;
+        empId = 123;
+        salary = Float.parseFloat("12345.6f");
+        System.out.printf("The employee named" + name + "\nwith employeeId of " + empId + "\nearns the salary of " + salary + "\nat the age of " + age + "\n");
+    }
+
+    public static void show() {
+//        since it is declared with static keyword no need of the object creation for the method calling
+        System.out.println("This is a method declared with the static keyword");
+    }
+}
+
+
+public class Employee1 {
+    static void myStaticMethod() {
+        System.out.println("This is  static method declaration");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("objects classes and methods examples");
+        Scanner sc = new Scanner(System.in);
+//        now invoking the classes with the creation of objects except than the static class type
+        Person p1 = new Person();
+        p1.showDetails();
+        p1.show();
+        myStaticMethod();
+
+    }
+}
