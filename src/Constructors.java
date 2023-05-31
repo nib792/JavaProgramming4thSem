@@ -7,9 +7,9 @@ class MyMainEmployee {
         name = "myname";
     }
 
-    public MyMainEmployee(String myName,int myID) {
+    public MyMainEmployee(String myName, int myID) {
         name = myName;
-        id=myID;
+        id = myID;
     }
 
     public String getName() {
@@ -33,7 +33,7 @@ class MyMainEmployee {
 public class Constructors {
     public static void main(String[] args) {
         MyMainEmployee emp1 = new MyMainEmployee();
-        MyMainEmployee emp2 = new MyMainEmployee("MY name is parameterized constructor",12);
+        MyMainEmployee emp2 = new MyMainEmployee("MY name is parameterized constructor", 12);
 //        emp1.setID(22);
 //        emp1.getID();
 //        emp1.setName("rabin");
